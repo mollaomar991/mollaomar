@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Molla Omar — ML Researcher</title>
+  <meta name="description"
+    content="Portfolio of Md Molla Omar — ML/AI researcher specialising in interpretable machine learning, LLM security, time-series forecasting, and computer vision." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- nav -->
+  <nav id="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Back to top">Molla Omar</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <section id="hero" aria-label="Introduction">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Dhaka, Bangladesh</p>
+        <h1 class="hero-name">Md Molla Omar</h1>
+        <p class="hero-tagline">
+          <span class="tagline-rotating" aria-live="polite" aria-atomic="true"></span>
+        </p>
+        <p class="hero-sub">
+          CSE student at UIU, graduating 2027. Research focus: interpretable ML, LLM security and computer vision.
+        </p>
+        <div class="hero-actions">
+          <!-- TODO -->
+          <a href="#" class="btn btn-primary">Download CV</a>
+          <a href="#research" class="btn btn-ghost">View Research</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap" aria-hidden="false">
+        <div class="hero-photo-frame" id="hero-photo">
+          <img src="image2.png" alt="Md Molla Omar on campus at UIU" width="420" height="560" />
+          <div class="hero-photo-scan" aria-hidden="true"></div>
+        </div>
+        <svg class="hero-photo-svg" aria-hidden="true">
+          <rect x="2" y="2" width="98%" height="98%" rx="15" />
+        </svg>
+        <span class="hero-photo-corner tl" aria-hidden="true"></span>
+        <span class="hero-photo-corner tr" aria-hidden="true"></span>
+        <span class="hero-photo-corner bl" aria-hidden="true"></span>
+        <span class="hero-photo-corner br" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <svg width="20" height="28" viewBox="0 0 20 28" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="18" height="26" rx="9" stroke="currentColor" stroke-width="1.5" />
+        <rect class="scroll-dot" x="9" y="6" width="2" height="5" rx="1" fill="currentColor" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- about -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-frame">
+            <img src="photo.jpeg" alt="Md Molla Omar — formal portrait" width="400" height="400" />
+          </div>
+          <div class="accent-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text">
+          <h2 id="about-heading" class="section-heading reveal">About</h2>
+
+          <p class="body-text reveal">
+            I'm a final-year Computer Science &amp; Engineering student at
+            United International University, Dhaka — graduating in 2027.
+            My research sits at the intersection of <strong>interpretable machine
+              learning</strong>, <strong>NLP security</strong>, and
+            <strong>computer vision</strong>: I care about models that explain
+            their decisions, not just make them.
+          </p>
+
+          <!-- Education card -->
+          <div class="edu-card reveal">
+            <div class="edu-logo" aria-hidden="true">UIU</div>
+            <div class="edu-details">
+              <strong>B.Sc. Computer Science &amp; Engineering</strong>
+              <span>United International University, Dhaka</span>
+              <span>Expected 2027 · Current CGPA <em class="mono">3.34 / 4.00</em></span>
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <ul class="achieve-list reveal" aria-label="Academic achievements">
+            <li>
+              <span class="achieve-icon" aria-hidden="true">◆</span>
+              25% Merit Scholarship — awarded twice for academic excellence
+            </li>
+            <li>
+              <span class="achieve-icon" aria-hidden="true">◆</span>
+              Top 10 university-wide in Software Engineering project competition
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- research -->
+  <section id="research" class="section section-alt" aria-labelledby="research-heading">
+    <div class="container">
+      <h2 id="research-heading" class="section-heading centered reveal">Research</h2>
+      <p class="section-sub centered reveal">Four projects with verified results from paper evaluations.</p>
+
+      <div class="research-grid">
+
+        <!-- Card 1: Student Stress -->
+        <article class="research-card reveal" aria-label="Student Stress Prediction research">
+          <header class="card-header">
+            <span class="card-num mono">01</span>
+            <h3 class="card-title">Explainable ML Framework for Student Stress Prediction</h3>
+          </header>
+          <p class="card-desc">
+            Comparative benchmark of 12 ML classifiers for multi-class stress prediction,
+            with SHAP-based feature explanations and a personalised recommendation engine.
+          </p>
+          <div class="card-stats">
+            <div class="stat">
+              <span class="stat-num mono">89.55%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">0.8952</span>
+              <span class="stat-label">F1 Score</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">12</span>
+              <span class="stat-label">Models compared</span>
+            </div>
+          </div>
+          <ul class="card-tags" aria-label="Technologies">
+            <li>XGBoost</li>
+            <li>LightGBM</li>
+            <li>Extra Trees</li>
+            <li>SHAP</li>
+            <li>Scikit-learn</li>
+          </ul>
+          <footer class="card-links">
+            <!-- TODO -->
+            <a href="#" class="card-link">Paper</a>
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+        <!-- Card 2: Prompt Injection -->
+        <article class="research-card reveal" aria-label="Bangla Prompt Injection research">
+          <header class="card-header">
+            <span class="card-num mono">02</span>
+            <h3 class="card-title">Bangla Prompt Injection Detection in LLMs</h3>
+          </header>
+          <p class="card-desc">
+            First systematic study of prompt injection attacks in Bangla (pure, Banglish,
+            mixed-script). Novel 2,972-prompt dataset across 11 attack categories;
+            LoRA fine-tuning on a single RTX 3050.
+          </p>
+          <div class="card-stats">
+            <div class="stat">
+              <span class="stat-num mono">92.44%</span>
+              <span class="stat-label">Accuracy (LLaMA 3.1 FT)</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">96.07%</span>
+              <span class="stat-label">F1 Score</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">100%</span>
+              <span class="stat-label">Recall</span>
+            </div>
+          </div>
+          <ul class="card-tags" aria-label="Technologies">
+            <li>LLaMA 3.1 (8B)</li>
+            <li>Gemma 3 (4B)</li>
+            <li>LoRA</li>
+            <li>4-bit QLoRA</li>
+            <li>SHAP</li>
+            <li>Unsloth</li>
+          </ul>
+          <footer class="card-links">
+            <!-- TODO -->
+            <a href="#" class="card-link">Paper</a>
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+        <!-- Card 3: Air Pollution -->
+        <article class="research-card reveal" aria-label="Air Pollution Forecasting research">
+          <header class="card-header">
+            <span class="card-num mono">03</span>
+            <h3 class="card-title">Spatio-Temporal Air Pollution Spike Forecasting — Bangladesh</h3>
+          </header>
+          <p class="card-desc">
+            Hybrid framework — ST-DBSCAN clustering + Apriori association rules +
+            gradient-boosted ensemble — to forecast hazardous PM2.5 spikes across
+            6 Bangladeshi cities from 208,368+ hourly records.
+          </p>
+          <div class="card-stats">
+            <div class="stat">
+              <span class="stat-num mono">0.867</span>
+              <span class="stat-label">F1 Score (t+1h)</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">90.4%</span>
+              <span class="stat-label">Recall</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">0.930</span>
+              <span class="stat-label">PR-AUC</span>
+            </div>
+          </div>
+          <ul class="card-tags" aria-label="Technologies">
+            <li>XGBoost</li>
+            <li>LightGBM</li>
+            <li>ST-DBSCAN</li>
+            <li>Apriori</li>
+            <li>SMOTE</li>
+            <li>SHAP</li>
+          </ul>
+          <footer class="card-links">
+            <!-- TODO -->
+            <a href="#" class="card-link">Paper</a>
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+        <!-- Card 4: Knee MRI -->
+        <article class="research-card reveal" aria-label="Knee MRI Vision-Language research">
+          <header class="card-header">
+            <span class="card-num mono">04</span>
+            <h3 class="card-title">Vision-Language Framework for Knee MRI Analysis</h3>
+          </header>
+          <p class="card-desc">
+            Two-stage pipeline — YOLOv11m object detection on 2.5D pseudo-RGB fastMRI
+            slices + Qwen2.5-VL-3B report generation — for abnormality localisation
+            and clinical question answering.
+          </p>
+          <div class="card-stats">
+            <div class="stat">
+              <span class="stat-num mono">0.393</span>
+              <span class="stat-label">mAP@50 (best class)</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">5</span>
+              <span class="stat-label">Clinical super-classes</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num mono">1,488</span>
+              <span class="stat-label">Validation slices</span>
+            </div>
+          </div>
+          <ul class="card-tags" aria-label="Technologies">
+            <li>YOLOv11m</li>
+            <li>Qwen2.5-VL</li>
+            <li>fastMRI+</li>
+            <li>PyTorch</li>
+            <li>2.5D imaging</li>
+          </ul>
+          <footer class="card-links">
+            <!-- TODO -->
+            <a href="#" class="card-link">Paper</a>
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading" class="section-heading centered reveal">Projects</h2>
+      <p class="section-sub centered reveal">Side projects built while studying.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal" aria-label="InfraSync BD project">
+          <div class="project-header">
+            <span class="project-num mono" aria-hidden="true">—</span>
+            <h3 class="project-title">InfraSync BD</h3>
+          </div>
+          <p class="project-desc">
+            AI-assisted infrastructure coordination platform for resource allocation
+            and project tracking across government and private sector projects.
+          </p>
+          <ul class="project-tags" aria-label="Tech stack">
+            <li>Next.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <footer class="project-footer">
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+        <article class="project-card reveal" aria-label="PhotoPrint AI project">
+          <div class="project-header">
+            <span class="project-num mono" aria-hidden="true">—</span>
+            <h3 class="project-title">PhotoPrint AI</h3>
+          </div>
+          <p class="project-desc">
+            AI-powered photo enhancement tool that transforms raw snapshots
+            into print-ready images with a full-stack processing pipeline.
+          </p>
+          <ul class="project-tags" aria-label="Tech stack">
+            <li>React.js</li>
+            <li>Django</li>
+            <li>Python</li>
+          </ul>
+          <footer class="project-footer">
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+        <article class="project-card reveal" aria-label="Mediscribe project">
+          <div class="project-header">
+            <span class="project-num mono" aria-hidden="true">—</span>
+            <h3 class="project-title">Mediscribe</h3>
+          </div>
+          <p class="project-desc">
+            Healthcare platform for appointment booking, real-time patient–doctor
+            messaging, and digital prescription management.
+          </p>
+          <ul class="project-tags" aria-label="Tech stack">
+            <li>Java</li>
+            <li>JavaFX</li>
+          </ul>
+          <footer class="project-footer">
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+        <article class="project-card reveal" aria-label="UIU Alumni Association project">
+          <div class="project-header">
+            <span class="project-num mono" aria-hidden="true">—</span>
+            <h3 class="project-title">UIU Alumni Association</h3>
+          </div>
+          <p class="project-desc">
+            Social platform for UIU graduates — authentication, activity feeds,
+            posts, and community features for alumni engagement.
+          </p>
+          <ul class="project-tags" aria-label="Tech stack">
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+          <footer class="project-footer">
+            <!-- TODO -->
+            <a href="#" class="card-link">Repo</a>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+    <div class="container">
+      <h2 id="skills-heading" class="section-heading centered reveal">Skills</h2>
+      <p class="section-sub centered reveal">Hover a category to see what I work with.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal" data-group="Languages">
+          <h3 class="skill-group-title">Languages</h3>
+          <ul class="skill-tags" role="list">
+            <li class="skill-tag" tabindex="0">Python</li>
+            <li class="skill-tag" tabindex="0">Java</li>
+            <li class="skill-tag" tabindex="0">C</li>
+            <li class="skill-tag" tabindex="0">C++</li>
+            <li class="skill-tag" tabindex="0">SQL</li>
+            <li class="skill-tag" tabindex="0">JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal" data-group="ML / AI">
+          <h3 class="skill-group-title">ML / AI</h3>
+          <ul class="skill-tags" role="list">
+            <li class="skill-tag" tabindex="0">Scikit-learn</li>
+            <li class="skill-tag" tabindex="0">XGBoost</li>
+            <li class="skill-tag" tabindex="0">LightGBM</li>
+            <li class="skill-tag" tabindex="0">PyTorch</li>
+            <li class="skill-tag" tabindex="0">Hugging Face</li>
+            <li class="skill-tag" tabindex="0">LoRA / QLoRA</li>
+            <li class="skill-tag" tabindex="0">SHAP</li>
+            <li class="skill-tag" tabindex="0">YOLOv11</li>
+            <li class="skill-tag" tabindex="0">Unsloth</li>
+            <li class="skill-tag" tabindex="0">Ollama</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal" data-group="Data">
+          <h3 class="skill-group-title">Data</h3>
+          <ul class="skill-tags" role="list">
+            <li class="skill-tag" tabindex="0">Pandas</li>
+            <li class="skill-tag" tabindex="0">NumPy</li>
+            <li class="skill-tag" tabindex="0">Matplotlib</li>
+            <li class="skill-tag" tabindex="0">Seaborn</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal" data-group="Web &amp; Databases">
+          <h3 class="skill-group-title">Web &amp; Databases</h3>
+          <ul class="skill-tags" role="list">
+            <li class="skill-tag" tabindex="0">React.js</li>
+            <li class="skill-tag" tabindex="0">Next.js</li>
+            <li class="skill-tag" tabindex="0">Django</li>
+            <li class="skill-tag" tabindex="0">Express.js</li>
+            <li class="skill-tag" tabindex="0">MySQL</li>
+            <li class="skill-tag" tabindex="0">PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal" data-group="Tools">
+          <h3 class="skill-group-title">Tools</h3>
+          <ul class="skill-tags" role="list">
+            <li class="skill-tag" tabindex="0">Git / GitHub</li>
+            <li class="skill-tag" tabindex="0">Google Colab</li>
+            <li class="skill-tag" tabindex="0">LaTeX</li>
+            <li class="skill-tag" tabindex="0">VS Code</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-inner">
+        <h2 id="contact-heading" class="section-heading reveal">Let's connect</h2>
+        <p class="body-text reveal">
+          Open to research collaborations and internship opportunities in ML and AI.
+        </p>
+
+        <a href="mailto:mollaomar991@gmail.com" class="contact-email reveal">
+          mollaomar991@gmail.com
+        </a>
+
+        <ul class="contact-links reveal" role="list" aria-label="Social links">
+          <!-- TODO -->
+          <li>
+            <a href="https://github.com/mollaomar991" target="_blank" rel="noopener noreferrer"
+              class="contact-social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://leetcode.com/u/mollaomar/" target="_blank" rel="noopener noreferrer"
+              class="contact-social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M13.483 0a1.374 1.374 0 00-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 00-1.209 2.104 5.35 5.35 0 00-.125 2.236 5.456 5.456 0 00.56 2.012 5.337 5.337 0 001.09 1.611l4.719 4.433.462.432 1.357 1.274a1.374 1.374 0 001.956 0 1.408 1.408 0 000-1.978l-.462-.432-1.355-1.272 4.291-3.934.645-.59a5.337 5.337 0 001.09-1.611 5.456 5.456 0 00.56-2.012 5.35 5.35 0 00-.125-2.236 5.266 5.266 0 00-1.209-2.104l-3.854-4.126-5.406-5.788A1.374 1.374 0 0013.483 0zm-2.866 15.14l-4.291 3.934-.645.59a3.5 3.5 0 01-4.9-.25 3.587 3.587 0 01.25-5.009l.645-.59 4.291-3.934 4.65 5.259z" />
+              </svg>
+              LeetCode
+            </a>
+          </li>
+          <!-- TODO -->
+          <li>
+            <a href="#" class="contact-social-link" aria-label="LinkedIn (add link)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mono footer-text">
+        &copy; 2026 Md Molla Omar &middot; Dhaka, Bangladesh
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
